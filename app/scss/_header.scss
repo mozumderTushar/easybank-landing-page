@@ -1,8 +1,7 @@
 .header{
-
+  
   // Hamburger Open Styles
   &.open{
-
     .header__toggle{
       > span:first-child{
         transform: rotate(45deg);
@@ -23,6 +22,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: 1;
     background-image: linear-gradient($darkBlue, transparent);
   }
 
@@ -31,6 +31,7 @@
     background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    z-index: 2;
   }
   &__logo{
     img{
@@ -63,6 +64,7 @@
     margin-top: 1.5rem;
     padding:  1.625rem;
     border-radius: 5px;
+    z-index: 1;
 
     a{
       display: block;
